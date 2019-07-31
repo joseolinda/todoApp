@@ -7,7 +7,17 @@ const listaFeito =  document.querySelector(".complete-list ul");
 
 // Funcao Adicionar Tareta
 const createNewTask = function(task){
-  var item = document.createElement("li"); //<li>
-  var checkBox = document.createElement("input"); //checkbox
-  var label = document.createElement("label"); // <label>
+  let item = document.createElement("li"); //<li>
+  let checkBox = document.createElement("input"); //checkbox
+  let label = document.createElement("label"); // <label>
+  
+  //Adiconar texto
+  label.innerText = task;
+  
+  // Definir o input com checkbox
+  checkBox.type = "checkbox";
+  
+  // Adicionar elementos no LI
+  item.appendChild(checkBox);
+  item.appendChild(label);
 }
