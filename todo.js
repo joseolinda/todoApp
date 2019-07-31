@@ -20,4 +20,12 @@ const createNewTask = function(task){
   // Adicionar elementos no LI
   item.appendChild(checkBox);
   item.appendChild(label);
+  
+  return item;
+}
+
+const addTask = function(){
+  
+  let novo_li = createNewTask(newTask.value);
+  
 }
