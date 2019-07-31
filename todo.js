@@ -26,7 +26,13 @@ const createNewTask = function(task){
 
 const addTask = function(){
   
-  let novo_li = createNewTask(newTask.value);
-  listaFazer.appendChild( novo_li );
+  if( newTask.value != "" )  {
+  
+      let novo_li = createNewTask(newTask.value);
+      listaFazer.appendChild( novo_li );
+    
+      newTask.value = "";
+    
+  }
   
 }
